@@ -15,9 +15,9 @@ function Home() {
   return (
     <main>
       <div className='main h-screen'>
-        <section className='container pl-56 pt-20 animate-fade-right animate-once animate-ease-in'>
-          <h1 className=' text-9xl angel text-orange-300 pt-10 pb-8'>Neringa Sala</h1>
-          <p className='text-4xl angel text-orange-300'>Kaip atrasti savo kelia</p>
+        <section className='container  pl-32 pt-20 animate-fade-right animate-once animate-ease-in lg:pl-24 max-sm:pl-8'>
+          <h1 className=' 2xl:text-9xl angel text-orange-300 pt-10 pb-8 xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl max-sm:text-5xl'>Neringa Sala</h1>
+          <p className='text-4xl angel text-orange-300 sm:text-3xl'>Kaip atrasti savo kelia</p>
           <div className='py-10'><button className=" bg-orange-300 font-bold hover:bg-orange-500 text-gray-800
           py-4 px-12   rounded-xl shadow-md hover:trasition hover:-translate-y-1 duration-300 delay-100"
           onClick={() => {navigate('/contact')}}>
@@ -29,7 +29,7 @@ function Home() {
 
       <section className='border-t-2 border-orange-300 bg-black'>
         <RevealOnScroll effect={'animate-fade-right animate-once animate-ease-in'}>
-        <div className='container w-2/5 ml-64 pt-14 pb-20'>
+        <div className='container flex flex-wrap px-8 xl:w-2/5 xl:ml-64 pt-14 pb-20 md:ml-32 ms:ml-18'>
           <h1 className='text-5xl angel text-orange-300 py-9'>Apie mane</h1>
           <p className='pb-5 text-xl'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam optio accusantium voluptatibus nam beatae vel voluptas saepe recusandae, fugiat magni facere sit esse ex, consectetur inventore ab? Dolorem, impedit doloremque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur dicta nam dolorum iusto? Ex, at. Maiores, vero harum. Impedit quod assumenda est? Iure ullam ipsum rerum voluptate nam pariatur fugit? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, minus dolorem cum, velit explicabo omnis beatae eum veniam adipisci iusto deleniti inventore architecto doloribus suscipit accusamus. Ipsam pariatur delectus ab?</p>
           <p className='pb-5 text-xl'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum deleniti amet eius odit, cupiditate, quas quam facere quo dolores eligendi, consectetur quaerat praesentium tempora veritatis minus iusto a esse dolore.</p>
