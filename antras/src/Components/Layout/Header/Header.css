@@ -53,11 +53,14 @@ a {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 500px) {
     ul{
          text-align: center;
     }
     #nav{
-        justify-content: center;
+        justify-content: space-around;
+    }
+    #nav {
+        margin: 0;
     }
 }

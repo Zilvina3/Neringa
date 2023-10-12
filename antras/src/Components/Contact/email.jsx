@@ -17,7 +17,7 @@ export const ContactUs = () => {
         }, (error) => {
             console.log(error.text);
         });
-        setResponse('Jusu zinute issiusta')
+        setResponse('Jūsu žinutė išsiųsta')
         e.target.reset()
     };
   
