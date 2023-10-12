@@ -11,24 +11,16 @@ function Layout({ children }) {
         },
         {
             name: 'Apie mane',
-            to: '/'
+            to: '/Apie'
         },
         {
-            name: 'Burimo konsultacija',
-            to: '/'
+            name: 'Asmeninė konsultacija',
+            to: '/konsultacija'
         },
         {
             name: 'Psichoterapija',
             to: '/'
         },
-        {
-            name: 'Meditacija',
-            to: '/'
-        },
-        {
-            name: 'Atsiliepimai',
-            to: '/'
-        }
     ]
 
   return (

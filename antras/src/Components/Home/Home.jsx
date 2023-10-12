@@ -20,7 +20,7 @@ function Home() {
           <p className='text-4xl angel text-orange-300 sm:text-3xl'>Kaip atrasti savo kelia</p>
           <div className='py-10'><button className=" bg-orange-300 font-bold hover:bg-orange-500 text-gray-800
           py-4 px-12   rounded-xl shadow-md hover:trasition hover:-translate-y-1 duration-300 delay-100"
-          onClick={() => {navigate('/contact')}}>
+            onClick={() => { navigate('/contact') }}>
             Susisiekti
           </button>
           </div>
@@ -29,18 +29,25 @@ function Home() {
 
       <section className='border-t-2 border-orange-300 bg-black'>
         <RevealOnScroll effect={'animate-fade-right animate-once animate-ease-in'}>
-        <div className='container flex flex-wrap px-8 xl:w-2/5 xl:ml-64 pt-14 pb-20 md:ml-32 ms:ml-18'>
-          <h1 className='text-5xl angel text-orange-300 py-9'>Apie mane</h1>
-          <p className='pb-5 text-xl'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam optio accusantium voluptatibus nam beatae vel voluptas saepe recusandae, fugiat magni facere sit esse ex, consectetur inventore ab? Dolorem, impedit doloremque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur dicta nam dolorum iusto? Ex, at. Maiores, vero harum. Impedit quod assumenda est? Iure ullam ipsum rerum voluptate nam pariatur fugit? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, minus dolorem cum, velit explicabo omnis beatae eum veniam adipisci iusto deleniti inventore architecto doloribus suscipit accusamus. Ipsam pariatur delectus ab?</p>
-          <p className='pb-5 text-xl'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum deleniti amet eius odit, cupiditate, quas quam facere quo dolores eligendi, consectetur quaerat praesentium tempora veritatis minus iusto a esse dolore.</p>
-          <div>
-            <button type='button' onClick={() => {navigate('/contact')}} className='py-5 px-8  rounded-xl bg-orange-300
+          <div className='container flex flex-wrap px-8 xl:w-3/5 xl:ml-64 pt-14 pb-20 md:ml-32 ms:ml-18'>
+            <h1 className='text-5xl angel text-orange-300 py-9'>Apie mane</h1>
+            <p className='pb-5 text-xl text-justify'>Gyvenimo knyga neturi juodraščio. Tik atvertę naują puslapį galime pamatyti, kaip pamažu, o kartais ir pasiutusiai greitai jis užsipildo. Tai baugina, trikdo, o kartais net priverčia per ilgai užsibūti ten, kur mums ne vieta. Visgi pasaulis nesustabdomai keičiasi ir toje pokyčių karuselėje kiekvienas galiausiai būna priverstas susitikti su pačiu savimi.
+            </p>
+
+            <p className='pb-5 text-xl text-justify'>Esu tam, kad padėčiau visiems norintiems susipažinti su tikruoju savimi. Sielos paveikslas ne visada atitinka susikurtus lūkesčius. Juk ir neturi atitikti! Visgi turime galią šiek tiek pataisyti spalvas bei pustonius. Ir taip patobulėję, išdrįsti žengti nauju, gerokai šviesesniu taku. Kviečiu statyti naujus tiltus ir kreipti savosios gyvenimo upės vagas su sąmoningumu bei dėkingumu. Tai padaryti kiekvienas turi pats. Aš galiu tik palydėti it jau šioje kelionėje ne kartą pabuvosi gidė ar it palaikanti mokytoja išmokyti naudotis pačiais efektyviausiais įrankiais, kuriais mus apdovanojo gamta – dėmesingumu, kvėpavimu ir nuo prietarų laisva mąstysena.
+            </p>
+
+            <p className='pb-5 text-xl text-justify'>
+              Pažinimo ir tobulėjimo keliu pati einu jau daugiau nei dvi dešimtis metų. Per savo karjerą mėginau žiūrėti į žvaigždes, stengiausi net kyštelti nosį anapus ar perskaityti subtiliųjų energijų padiktuotas žinutes psichologijos kortose. Šie įdomūs, bet sunkiai įveikiami laipteliai galiausiai mane atvedė prie suvokimo, kad tikroji jėga slypi pačio žmogaus sielos, kūno ir proto harmonijoje. Būtent čia glūdi įstabi savęs ir pasaulio pažinimo dovana, kurią tikslingai veikdami kiekvienas galime išpakuoti. Tad, jeigu jaučiatės pasirengę pasikeisti, kviečiu prisijungti prie manęs. Kartu galėsime pažvelgti į praeitį, dabartį ir ateitį bei nuspręsti, kokius žingsnius reikia žengti, kad taptumėte laimingesni ir sėkmingesni.
+            </p>
+            <div>
+              <button type='button' onClick={() => { navigate('/contact') }} className='py-5 px-8  rounded-xl bg-orange-300 my-5
               text-black font-bold hover:bg-orange-500 shadow-md hover:trasition hover:-translate-y-1 duration-300 delay-100'>Paklausk manes</button>
+            </div>
           </div>
-          </div>
-          </RevealOnScroll>
+        </RevealOnScroll>
       </section>
-      
+
     </main>
   )
 }
