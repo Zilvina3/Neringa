@@ -16,6 +16,7 @@ function App() {
       <Route path={'/contact'} element={<Layout><Contact /></Layout>} />
       <Route path={'/Apie'} element={<Layout><AboutMe /></Layout>} />
       <Route path={'/konsultacija'} element={<Layout><Consultation /></Layout>} />
+      <Route path={'/home'} element={<Layout><Home /></Layout>} />
     </Routes>
   )
 }

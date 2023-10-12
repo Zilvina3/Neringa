@@ -10,12 +10,15 @@ function Header({ NavItems }) {
     const [screenSize, setScreenSize] = useState(getCurrentDimension());
     const [toggleNav, setToggleNav ] = useState(false)
 
+    let curLinkPath = window.location.pathname
+
     function getCurrentDimension(){
     	return {
       		width: window.innerWidth,
       		height: window.innerHeight
     	}
   	}
+
 
       useEffect(() => {
         const updateDimension = () => {
@@ -48,26 +51,29 @@ function Header({ NavItems }) {
                     <div className='burger burger3 bg-orange-300'></div>
                 </div>
 
-              {screenSize.width > '1022' && <ul className={`flex flex-wrap justify-center animate-fade-down`}>
+              {screenSize.width > '1100' && <ul className={`flex flex-wrap justify-center animate-fade-down `}>
                     {NavItems.map((item, key) => {
                         return (
                             <li key={key} className={`p-5 text-center`}>
-                                <Link className='font-bold w-full text-orange-300 hover:text-white ' id='nav-links' to={item.to}>{item.name}</Link>
+                                    <Link  className={item.to === curLinkPath ? `font-bold w-full text-orange-500 border-b-2 p-1 border-orange-500 ` : 'font-bold w-full text-orange-300 hover:text-orange-500 p-1'} id='nav-links' to={item.to}>{item.name}</Link>
                             </li>
                         )
                     })}
                 </ul>}
 
-               {toggleNav && <ul className={`flex flex-wrap justify-center animate-fade-down`}>
+                
+
+               {toggleNav && <ul className={`flex flex-wrap justify-center animate-fade-down text-center`}>
                     {NavItems.map((item, key) => {
                         return (
-                            <li key={key} className={`p-5`}>
-                                <Link className='font-bold text-orange-300 hover:text-white' id='nav-links' to={item.to}>{item.name}</Link>
+                            <li key={key} onClick={()=> {setToggleNav(false)}} className={`p-5 li_remove max-lg:w-3/5 max-sm:w-full `}>
+                                <Link className={ item.to === curLinkPath ? 'font-bold text-orange-500 border-b-2 p-1 border-orange-500' : 'font-bold text-orange-300 hover:text-orange-500' } id='nav-links' to={item.to}>{item.name}</Link>
                             </li>
                         )
                     })}
                 </ul>}
-
+                
+                {screenSize.width < '1099' && document.querySelector('.li_remove') && document.querySelector('.li_remove').remove()}
             </nav>
         </header>
     )

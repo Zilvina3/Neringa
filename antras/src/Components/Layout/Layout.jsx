@@ -19,7 +19,15 @@ function Layout({ children }) {
         },
         {
             name: 'Psichoterapija',
-            to: '/'
+            to: '/home'
+        },
+        {
+            name: 'Spauda rašo',
+            to: '/home'
+        },
+        {
+            name: 'Atsiliepimai',
+            to: '/home'
         },
     ]
 

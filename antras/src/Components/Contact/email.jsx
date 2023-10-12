@@ -22,26 +22,26 @@ export const ContactUs = () => {
     };
   
     return (
-        <form className='flex flex-col w-2/5 m-7' ref={form} onSubmit={sendEmail}>
+        <form className='flex flex-col w-2/5 m-7 max-lg:w-3/5 max-sm:w-full max-sm:my-20' ref={form} onSubmit={sendEmail}>
         <div className='flex flex-col m-3'>
-            <label className='w-32 text-2xl my-2 text-orange-300' htmlFor='fname' >First Name</label>
-            <input required className='w-64 rounded-md p-2 bg-slate-600 outline-orange-300' type="text" id="fname" name="firstname" placeholder="Your name.." />
+            <label className='w-32 text-2xl my-2 text-orange-300' htmlFor='fname' >Vardas</label>
+            <input required className='w-64 rounded-md p-2 bg-slate-600 outline-orange-300' type="text" id="fname" name="firstname" placeholder="Jūsų vardas . ." />
         </div>
 
         <div className='flex flex-col m-3'>
-            <label className='w-32 text-2xl my-2 text-orange-300'>Email</label>
-            <input required className='w-64 rounded-md p-2 bg-slate-600' type="email" id="email" name="email" placeholder="Your email.." />
+            <label className='w-32 text-2xl my-2 text-orange-300'>Paštas</label>
+            <input required className='w-64 rounded-md p-2 bg-slate-600' type="email" id="email" name="email" placeholder="Pavadinimas@paštas.lt . ." />
         </div>
         <div className='flex flex-col m-3 '>
-            <label className='w-32 text-2xl my-2 text-orange-300'>Subject</label>
-            <textarea required className='w-full rounded-md p-2 bg-slate-600' id="subject" name="subject" placeholder="Write something.." ></textarea>
+            <label className='w-32 text-2xl my-2 text-orange-300 '>Tema</label>
+            <textarea required className='w-full rounded-md p-2 bg-slate-600' id="subject" name="subject" rows={'4'} placeholder="Jūsu žinutė . ." ></textarea>
         </div>
 
 
         <div className='m-3'>
             <button type="submit" className='
               rounded-xl py-3 px-10 bg-orange-300 font-bold text-black
-             hover:bg-orange-400' >Submit</button>
+             hover:bg-orange-400' >Siųsti</button>
         </div>
         <div
             className='text-green-500 p-5 text-xl'

@@ -29,7 +29,7 @@ function Home() {
 
       <section className='border-t-2 border-orange-300 bg-black'>
         <RevealOnScroll effect={'animate-fade-right animate-once animate-ease-in'}>
-          <div className='container flex flex-wrap px-8 xl:w-3/5 xl:ml-64 pt-14 pb-20 md:ml-32 ms:ml-18'>
+          <div className='container flex flex-wrap px-8 xl:w-3/5 xl:ml-64 pt-14 pb-20 '>
             <h1 className='text-5xl angel text-orange-300 py-9'>Apie mane</h1>
             <p className='pb-5 text-xl text-justify'>Gyvenimo knyga neturi juodraščio. Tik atvertę naują puslapį galime pamatyti, kaip pamažu, o kartais ir pasiutusiai greitai jis užsipildo. Tai baugina, trikdo, o kartais net priverčia per ilgai užsibūti ten, kur mums ne vieta. Visgi pasaulis nesustabdomai keičiasi ir toje pokyčių karuselėje kiekvienas galiausiai būna priverstas susitikti su pačiu savimi.
             </p>
@@ -42,7 +42,7 @@ function Home() {
             </p>
             <div>
               <button type='button' onClick={() => { navigate('/contact') }} className='py-5 px-8  rounded-xl bg-orange-300 my-5
-              text-black font-bold hover:bg-orange-500 shadow-md hover:trasition hover:-translate-y-1 duration-300 delay-100'>Paklausk manes</button>
+              text-gray-800 font-bold hover:bg-orange-500 shadow-md hover:trasition hover:-translate-y-1 duration-300 delay-100'>Paklausk manęs</button>
             </div>
           </div>
         </RevealOnScroll>

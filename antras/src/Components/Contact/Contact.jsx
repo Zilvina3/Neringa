@@ -11,8 +11,8 @@ function Contact() {
 
 
     return (
-        <main className='h-screen bg-black py-32'>
-            <h1 className='text-8xl angel text-orange-300 text-center'>Contact</h1>
+        <main className=' bg-black py-32'>
+            <h1 className='text-8xl angel text-orange-300 text-center'>Susisiekti</h1>
             <section className='container mx-auto flex justify-center'>
                 <ContactUs />
                 
